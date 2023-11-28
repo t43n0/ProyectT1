@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margen"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imagenEum"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/imagen_uem"
+        android:src="@drawable/logo_uem" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnRegistrarNota"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margen"
+            android:layout_weight="1"
+            android:backgroundTint="#fe3227"
+            android:text="@string/btn_registrar_nota"/>
+
+        <Button
+            android:id="@+id/btnConsultarNota"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#fe3227"
+            android:text="@string/btn_consultar_nota" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margen"
+    tools:context=".RegistrarNota">
+
+    <TextView
+        android:id="@+id/tvSeleccionAlumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seleccion_de_alumno"
+        android:textColor="@color/my_light_primary"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/svAlumnos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvSeleccionAlumno"
+        android:layout_marginBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnAlum1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/alberto_barba_soriano"/>
+
+        <Button
+            android:id="@+id/btnAlum2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/alvaro_blazquez_vallejo"/>
+
+        <Button
+            android:id="@+id/btnAlum3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/raul_carrizo_martin"/>
+
+        <Button
+            android:id="@+id/btnAlum4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/joana_casco_galea"/>
+
+        <Button
+            android:id="@+id/btnAlum5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/javier_dominguez_fernandez"/>
+
+        <Button
+            android:id="@+id/btnAlum6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/gabriel_fernandez_aguilera"/>
+
+        <Button
+            android:id="@+id/btnAlum7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/amancio_javier_fernandez_lobo"/>
+
+        <Button
+            android:id="@+id/btnAlum8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/luis_gallego_herrero"/>
+
+        <Button
+            android:id="@+id/btnAlum9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/daniel_gallo_romo"/>
+
+        <Button
+            android:id="@+id/btnAlum10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/alberto_garcia_altez"/>
+
+        <Button
+            android:id="@+id/btnAlum11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/carlos_garcia_hernandez"/>
+
+        <Button
+            android:id="@+id/btnAlum12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/juan_manuel_guerra_arcas"/>
+
+        <Button
+            android:id="@+id/btnAlum13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/marcos_gimenez_diaz"/>
+
+        <Button
+            android:id="@+id/btnAlum14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/gonzalo_gonzalez_rodriguez"/>
+
+        <Button
+            android:id="@+id/btnAlum15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/jalil_martin_londres_blanes"/>
+
+        <Button
+            android:id="@+id/btnAlum16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/ignacio_martin_fernandez"/>
+
+        <Button
+            android:id="@+id/btnAlum17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/javier_martinez_gomez"/>
+
+        <Button
+            android:id="@+id/btnAlum18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/victor_perez_ramirez"/>
+
+        <Button
+            android:id="@+id/btnAlum19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/lorenzo_saez_bejar"/>
+
+        <Button
+            android:id="@+id/btnAlum20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/nicolas_suarez_ruiz"/>
+
+        <Button
+            android:id="@+id/btnAlum21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/liana_vilkelenoka"/>
+
+        <Button
+            android:id="@+id/btnAlum22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/angel_zhang"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <EditText
+        android:id="@+id/etAlumnSeleccionado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/svAlumnos"
+        android:layout_marginTop="-100dp"
+        android:autofillHints=""
+        android:hint="@string/et_selec_alumn"
+        android:inputType="none"
+        android:enabled="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="350dp">
+
+        <Button
+            android:id="@+id/btnAceptar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margen"
+            android:layout_weight="1"
+            android:text="@string/aceptar" />
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margen"
+            android:layout_weight="1"
+            android:text="@string/cancelar" />
+
+    </LinearLayout>
+
+</RelativeLayout>

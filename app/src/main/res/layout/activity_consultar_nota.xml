@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margen"
+    tools:context=".ConsultarNota">
+
+    <TextView
+        android:id="@+id/tvConsultarNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_consulta_de_notas_por_alumno"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:textColor="@color/my_light_primary"
+        />
+
+    <EditText
+        android:id="@+id/etSelecAlumn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvConsultarNota"
+        android:hint="@string/et_select_alumn"
+        android:enabled="false"
+        android:autofillHints=""
+        android:inputType="" />
+
+    <Button
+        android:id="@+id/btnSeleccionarAlumno"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentEnd="true"
+        android:text="@string/btn_selec_alumn"
+        />
+
+    <FrameLayout
+        android:id="@+id/fl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSeleccionarAlumno"
+        android:layout_marginTop="@dimen/margen">
+        <TextView
+            android:id="@+id/tvPmdm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl1"
+        android:layout_marginTop="@dimen/margen">
+        <TextView
+            android:id="@+id/tvAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl2"
+        android:layout_marginTop="@dimen/margen">
+        <TextView
+            android:id="@+id/tvPsp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl3"
+        android:layout_marginTop="@dimen/margen">
+        <TextView
+            android:id="@+id/tvDi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl4"
+        android:layout_marginTop="@dimen/margen">
+        <TextView
+            android:id="@+id/tvSge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl5"
+        android:layout_marginTop="@dimen/margen">
+        <TextView
+            android:id="@+id/tvIacc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl6"
+        android:layout_marginTop="@dimen/margen">
+        <TextView
+            android:id="@+id/tvIos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+</RelativeLayout>

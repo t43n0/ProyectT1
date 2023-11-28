@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margen"
+    tools:context=".RegistrarNota">
+
+    <TextView
+        android:id="@+id/tvRegistroNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_registro_de_nota"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:textColor="@color/my_light_primary"
+        />
+
+    <Button
+        android:id="@+id/btnSeleccionarAlumno"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentEnd="true"
+        android:text="@string/btn_selec_alumn"
+        />
+
+    <EditText
+        android:id="@+id/etSelecAlumn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRegistroNota"
+        android:hint="@string/et_select_alumn"
+        android:enabled="false"
+        android:autofillHints=""
+        android:inputType="" />
+
+    <Button
+        android:id="@+id/btnSeleccionarAsignatura"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_alignParentEnd="true"
+        android:text="@string/btn_selec_asig"
+        />
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/etSelecAsig"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSelecAlumn"
+        android:hint="@string/et_selec_asig"
+        android:enabled="false"
+        android:autofillHints=""
+        android:inputType="" />
+
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSelecAsig"
+        android:layout_marginTop="@dimen/margen">
+
+        <EditText
+            android:id="@+id/etNotaExamen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_nota_de_examen"
+            android:layout_marginEnd="@dimen/margen"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etNotaActividades"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/nota_de_actividades"
+            android:autofillHints=""
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalcularNota"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llayout"
+        android:layout_marginTop="@dimen/margen"
+        android:text="@string/btn_calcular_nota"
+        />
+
+    <EditText
+        android:id="@+id/etNotaFinal"
+        android:layout_width="230dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llayout"
+        android:layout_marginTop="@dimen/margen"
+        android:enabled="false"
+        android:hint="@string/et_nota_final"
+        android:autofillHints=""
+        android:inputType="none" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCalcularNota"
+        android:layout_marginTop="350dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/btnGuardarDatos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/margen"
+            android:text="@string/btn_guardar_datos"/>
+
+        <Button
+            android:id="@+id/btnLimpiarDatos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/margen"
+            android:text="@string/btn_limpiar_datos"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

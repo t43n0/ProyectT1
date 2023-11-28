@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margen"
+    tools:context=".RegistrarNota">
+
+    <TextView
+        android:id="@+id/tvSeleccionAsignatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_seleccion_de_asignatura"
+        android:textColor="@color/my_light_primary"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/asig1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSeleccionAsignatura"
+        android:paddingTop="50dp"
+        android:paddingBottom="0dp"
+        android:textSize="12sp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:background="@android:color/transparent"
+        android:text="@string/pmdm"/>
+
+    <Button
+        android:id="@+id/asig2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/asig1"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:textSize="12sp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:background="@android:color/transparent"
+        android:text="@string/ad"/>
+
+    <Button
+        android:id="@+id/asig3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/asig2"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:textSize="12sp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:background="@android:color/transparent"
+        android:text="@string/psp"/>
+
+    <Button
+        android:id="@+id/asig4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/asig3"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:textSize="12sp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:background="@android:color/transparent"
+        android:text="@string/di"/>
+
+    <Button
+        android:id="@+id/asig5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/asig4"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:textSize="12sp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:background="@android:color/transparent"
+        android:text="@string/sge"/>
+
+    <Button
+        android:id="@+id/asig6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/asig5"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:textSize="12sp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:background="@android:color/transparent"
+        android:text="@string/iacc"/>
+
+    <Button
+        android:id="@+id/asig7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/asig6"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:textSize="12sp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:background="@android:color/transparent"
+        android:text="@string/ios"/>
+
+
+    <EditText
+        android:id="@+id/etAsigSeleccionada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:layout_below="@id/asig7"
+        android:layout_marginTop="150dp"
+        android:hint="@string/seleccione_la_asignatura"
+        android:inputType="none"
+        android:enabled="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="350dp">
+
+        <Button
+            android:id="@+id/btnAceptar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margen"
+            android:layout_weight="1"
+            android:text="@string/aceptar" />
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margen"
+            android:layout_weight="1"
+            android:text="@string/cancelar" />
+
+    </LinearLayout>
+
+</RelativeLayout>
